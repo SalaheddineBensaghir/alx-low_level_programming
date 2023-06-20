@@ -1,18 +1,19 @@
 #include "holberton.h"
 /**
- * print_alphabet - wirte the the lower-case alphabet on a line.
+ * main - Entry point
  *
- *
- *
+ * Return: Alway 0 (Sucess)
  */
-void print_alphabet(void)
-{
-	char c;
 
-	for (c = 'a' ; c <= 'z' ; c++)
+int main(void)
+{
+	char *h = "Holberton\n";
+
+	while (*h)
 	{
-		_putchar(c);
+		_putchar(*h);
+		h++;
 	}
-	_putchar('\n');
+	return (0);
 }
 
